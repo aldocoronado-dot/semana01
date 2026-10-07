@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor USD a EUR</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8f5e9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      border-top: 8px solid #2e7d32;
+    }
+    .icon {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: #2e7d32;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #c8e6c9;
+      border-radius: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+      outline: none;
+      margin-bottom: 20px;
+    }
+    input[type="number"]:focus {
+      border-color: #4caf50;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      box-sizing: border-box;
+    }
+    .btn:hover {
+      background-color: #388e3c;
+      transform: translateY(-2px);
+    }
+    .resultado-box {
+      color: #2e7d32;
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+      background: #f1f8e9;
+      padding: 15px;
+      border-radius: 12px;
+    }
+    .monto-detalle {
+      color: #666;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">💸</div>
+    <h1>Convertidor USD a EUR</h1>
+    <form action="/convertir" method="GET">
+      <input type="number" name="cantidad" step="any" placeholder="Ingresa monto en USD" required>
+      <button type="submit" class="btn">Convertir Dinero</button>
+    </form>
+  </div>
+</body>
+</html>
